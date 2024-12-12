@@ -13,7 +13,7 @@ prepare_environment_for_lean_dojo()
 from lean_dojo import ( # isort: skip
     TacticState,
     LeanError,
-    TimeoutError,
+    # TimeoutError,
     ProofGivenUp,
     ProofFinished,
 )
@@ -55,7 +55,8 @@ class ProofFinishedNode(Node):
 
 @dataclass
 class ErrorNode(Node):
-    inner: Union[LeanError, TimeoutError, ProofGivenUp]
+    # inner: Union[LeanError, TimeoutError, ProofGivenUp]
+    inner: Union[LeanError, ProofGivenUp]
     status = Status.FAILED
     distance_to_proof = math.inf
     is_terminal = True

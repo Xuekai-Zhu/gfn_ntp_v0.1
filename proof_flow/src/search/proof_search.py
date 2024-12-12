@@ -37,7 +37,7 @@ from lean_dojo import ( # isort: skip
     LeanGitRepo,
     TacticState,
     LeanError,
-    TimeoutError,
+    # TimeoutError,
     ProofFinished,
     ProofGivenUp,
     DojoInitError,
@@ -294,7 +294,7 @@ class BestFirstSearchProver:
                 result_node = ProofFinishedNode(response)
             elif type(response) in (
                 LeanError,
-                TimeoutError,
+                # TimeoutError,
                 ProofGivenUp,
             ):
                 result_node = ErrorNode(response)
@@ -341,7 +341,7 @@ class BestFirstSearchProver:
                 assert self.root.status == Status.PROVED
             elif type(response) in (
                 LeanError,
-                TimeoutError,
+                # TimeoutError,
                 ProofGivenUp,
             ):
                 assert isinstance(node, ErrorNode)
