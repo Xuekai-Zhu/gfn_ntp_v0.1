@@ -22,5 +22,6 @@ print("traced_files", len(traced_repo.traced_files))
 
 print("-----------------------")
 
-traced_file = traced_repo.get_traced_file("Mathlib/Data/Relqk2dq38z.lean")
+# traced_file = traced_repo.get_traced_file("Mathlib/Data/Relqk2dq38z.lean")
+traced_file = traced_repo.get_traced_file("Mathlib/Algebra/ContinuedFractions/Translations2qx3rbck.lean")
 print(traced_file)
