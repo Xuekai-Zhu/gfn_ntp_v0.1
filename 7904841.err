@@ -1,0 +1,14 @@
+[rank: 0] Seed set to 27
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp_v0.1/proof_flow/scripts/gfn_tuning/train.py", line 45, in train
+    task, data, trainer = train_setup(config)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp_v0.1/proof_flow/scripts/gfn_tuning/train.py", line 58, in train_setup
+    data.setup("fit")
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp_v0.1/proof_flow/src/gfn_tuning/lean_data_module.py", line 61, in setup
+    self._get_theorems_from_file(self.hparams.train_data_path)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp_v0.1/proof_flow/src/gfn_tuning/lean_data_module.py", line 91, in _get_theorems_from_file
+    with open(repo_root() / path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/data/shuffled_balanced1k.json'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

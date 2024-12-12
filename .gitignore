@@ -170,3 +170,4 @@ cython_debug/
 /figures
 /local_data
 runs/
+checkpoints/

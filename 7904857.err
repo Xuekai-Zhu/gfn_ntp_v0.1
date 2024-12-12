@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/zhuxuekai/miniconda3/envs/reasoning/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/zhuxuekai/miniconda3/envs/reasoning/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/proof_flow/scripts/sanity_checks/check_lean_dojo.py", line 68, in <module>
+    tts = load_theorems_from_json(json_file, 2)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/proof_flow/scripts/sanity_checks/check_lean_dojo.py", line 14, in load_theorems_from_json
+    with open(file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/data/novel_premises_train_md3_tlinf.json'
