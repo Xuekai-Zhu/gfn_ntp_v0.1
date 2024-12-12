@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/zhuxuekai/miniconda3/envs/reasoning/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/zhuxuekai/miniconda3/envs/reasoning/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/proof_flow/scripts/sanity_checks/check_lean_dojo.py", line 70, in <module>
+    theorem = get_thm_from_file_entry(tt)
+  File "/scratch2/nlp/zhuxuekai/reasoning_flow/baselines/gfn_ntp/proof_flow/scripts/sanity_checks/check_lean_dojo.py", line 35, in get_thm_from_file_entry
+    repo = LeanGitRepo(e["url"], e["commit"])
+TypeError: string indices must be integers
