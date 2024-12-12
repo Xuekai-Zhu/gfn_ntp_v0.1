@@ -169,3 +169,4 @@ cython_debug/
 /tmux_sessions
 /figures
 /local_data
+runs/
