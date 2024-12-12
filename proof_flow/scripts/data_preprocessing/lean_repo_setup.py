@@ -79,6 +79,11 @@ def main():
     with Dojo(test_theorem, timeout=30) as (dojo, initial_state):
         print(f"entered dojo in {perf_counter() - start}s")
         time_tactics(dojo, initial_state, ttd["traced_tactics"])
+        
+    # test eof error 
+    traced_file = mathlib_repo.get_traced_file("Mathlib/Data/Relqk2dq38z.lean")
+    print(traced_file)
+    print("------------------")
 
 
 if __name__ == "__main__":
