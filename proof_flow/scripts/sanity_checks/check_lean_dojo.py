@@ -64,7 +64,7 @@ def time_tactics(dojo, initial_state, tacs):
 
 
 if __name__ == "__main__":
-    json_file = repo_root() / "data/novel_premises_train_md3_tlinf.json"
+    json_file = repo_root() / "data/shuffled_balanced1k.json"
     tts = load_theorems_from_json(json_file, 2)
     tt = tts[0]
     theorem = get_thm_from_file_entry(tt)
