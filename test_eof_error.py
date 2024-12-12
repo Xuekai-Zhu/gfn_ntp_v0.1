@@ -1,6 +1,8 @@
 from lean_dojo import *
 from proof_flow.src.utils import prepare_environment_for_lean_dojo, repo_root
 
+prepare_environment_for_lean_dojo()
+
 #command: /home/zhuxuekai/.elan/bin/lake
 # args: [b'/home/zhuxuekai/.elan/bin/lake', b'env', b'lean', b'--threads=1', b'--memory=32768', b'Mathlib/Data/Relqk2dq38z.lean']
 #

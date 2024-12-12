@@ -171,3 +171,5 @@ cython_debug/
 /local_data
 runs/
 checkpoints/
+*.err
+*.out
