@@ -81,9 +81,9 @@ def main():
         time_tactics(dojo, initial_state, ttd["traced_tactics"])
         
     # test eof error 
-    traced_file = mathlib_repo.get_traced_file("Mathlib/Data/Relqk2dq38z.lean")
-    print(traced_file)
-    print("------------------")
+    # traced_file = mathlib_repo.get_traced_file("Mathlib/Data/Relqk2dq38z.lean")
+    # print(traced_file)
+    # print("------------------")
 
 
 if __name__ == "__main__":
