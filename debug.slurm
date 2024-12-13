@@ -12,4 +12,4 @@ module load cudnn8.6-cuda11.8/8.6.0.163
 
 source /home/zhuxuekai/miniconda3/bin/activate reasoning
 
-python test_eof_error.py
+python test_eof_error_new.py
