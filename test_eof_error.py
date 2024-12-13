@@ -1,6 +1,18 @@
 from lean_dojo import *
 from proof_flow.src.utils import prepare_environment_for_lean_dojo, repo_root
 
+# def prepare_environment_for_lean_dojo():
+#     # github access token
+#     if not "GITHUB_ACCESS_TOKEN" in os.environ:
+#         load_dotenv(get_config().paths.github_access_token)
+
+#     # lean dojo cache path
+#     cache_path_key = "CACHE_DIR"
+#     if not cache_path_key in os.environ:
+#         config_cache_path = get_config().paths.lean_dojo_cache_path
+#         if config_cache_path is not None:
+#             os.environ[cache_path_key] = config_cache_path
+
 prepare_environment_for_lean_dojo()
 
 #command: /home/zhuxuekai/.elan/bin/lake
@@ -12,8 +24,7 @@ cached_path = os.path.expanduser(
 # repo = LeanGitRepo.from_path(cached_path)
 
 build_deps = True
-# cached_path = get_traced_repo_path(repo, build_deps)
-# logger.info(f"Loading the traced repo from {cached_path}")
+
 traced_repo = TracedRepo.load_from_disk(cached_path, build_deps)
 traced_repo.check_sanity()
 
