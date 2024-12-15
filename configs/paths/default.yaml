@@ -1,5 +1,5 @@
 # user home directory
-home: /scratch2/nlp/zhuxuekai/reasoning_flow/baselines
+home: /home/zhuxuekai/reasoning_flow/baselines
 
 # repo
 repo: ${.home}/gfn_ntp
