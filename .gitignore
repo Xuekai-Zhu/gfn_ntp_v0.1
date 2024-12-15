@@ -173,4 +173,3 @@ runs/
 checkpoints/
 *.err
 *.out
-configs/paths/default.yaml
